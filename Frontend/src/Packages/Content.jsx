@@ -133,11 +133,11 @@ const Content = () => {
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800">{pkg.name}</h3>
-                <p className="mt-2 text-2xl font-bold text-green-600">{pkg.price}</p>
+                <p className="mt-2 text-2xl font-bold text-teal-600">{pkg.price}</p>
                 <ul className="mt-4 space-y-2">
                   {pkg.includes.map((item, index) => (
                     <li key={index} className="flex items-center">
-                      <svg className="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="h-5 w-5 text-teal-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       <span className="text-gray-600">{item}</span>
@@ -145,8 +145,8 @@ const Content = () => {
                   ))}
                 </ul>
                 <button 
-                  onClick={() => handleBookNow('/pkg')}
-                  className="mt-6 w-full bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-md transition-colors duration-300"
+                  onClick={() => handleBookNow(pkg)}
+                  className="mt-6 w-full bg-teal-600 hover:bg-teal-700 text-white font-medium py-2 px-4 rounded-md transition-colors duration-300"
                 >
                   Book Now
                 </button>

@@ -10,10 +10,12 @@ import EditForm from './components/EditForm';
 import DonorsAnalysis from './components/DonorsAnalysis';
 import Header from './components/Header';
 import Packages from './Packages/Content';
-import AboutUs from './AboutUs/AboutUs';
+import PackagesForm from './Packages/PackagesForm';
+import AboutUs from './components/AboutUs';
 import ContactUs from './ContactUs/ContactUs';
 import Appointment from './Appointment/Appointment'
-import Inventory from './Inventory/Inventory'
+import BookAppointment from './Appointment/BookAppointment'
+import DoctorInfo from './Appointment/DoctorInfo'
 
 const App = () => {
   const [isAdminLoggedIn, setIsAdminLoggedIn] = useState(false);
@@ -59,10 +61,12 @@ const App = () => {
           <Route path="/editform" element={<EditForm />} />
           <Route path="/donorsanalysis" element={<DonorsAnalysis />} />
           <Route path="/packages" element={<Packages />} />
+          <Route path="/PackagesForm" element={<PackagesForm />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/appointment" element={<Appointment />} />
-          <Route path="/inventory" element={<Inventory />} />
+          <Route path="/doctor-info" element={<DoctorInfo />} />
+          <Route path="/add" element={<BookAppointment />} />
           <Route 
             path="/admin-login" 
             element={<AdminLogin onLogin={handleLogin} />} 

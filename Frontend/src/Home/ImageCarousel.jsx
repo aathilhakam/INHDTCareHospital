@@ -46,7 +46,7 @@ const ImageCarousel = () => {
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Carousel container with optimized height */}
-      <div className="relative h-[40vh] min-h-[300px] max-h-[500px]">
+      <div className="relative h-[60vh] min-h-[400px] max-h-[700px]">
         {images.map((image, index) => (
           <div
             key={index}

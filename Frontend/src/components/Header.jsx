@@ -67,7 +67,6 @@ const Header = ({ isAdminLoggedIn, adminName, onAdminLogout }) => {
             { name: "Appointment", path: "/appointment" },
             { name: "Health Packages", path: "/packages" },
             { name: "Blood Bank", path: "/bloodbank" },
-            { name: "Inventory", path: "/inventory" },
             { name: "About Us", path: "/aboutus" },
             { name: "Contact Us", path: "/contactus" },
           ].map((item) => (
